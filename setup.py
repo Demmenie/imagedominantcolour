@@ -6,13 +6,13 @@ with open(os.path.join(os.path.dirname(__file__), "README.md")) as f:
 
 about = {}
 with open(
-    os.path.join(os.path.dirname(__file__), "imagedominantcolor", "__version__.py")
+    os.path.join(os.path.dirname(__file__), "imagedominantcolour", "__version__.py")
 ) as f:
     exec(f.read(), about)
 
 setup(
     name=about["__title__"],
-    packages=["imagedominantcolor"],
+    packages=["imagedominantcolour"],
     version=about["__version__"],
     description=about["__description__"],
     long_description=long_description,
@@ -21,15 +21,15 @@ setup(
     author=about["__author__"],
     author_email=about["__author_email__"],
     url=about["__url__"],
-    download_url="https://github.com/akamhy/imagedominantcolor/archive/%s.tar.gz"
+    download_url="https://github.com/demmenie/imagedominantcolour/archive/%s.tar.gz"
     % about["__version__"],
     keywords=[
-        "Get dominant colors of image",
-        "imagedominantcolor",
-        "Extract dominant colors of an image using Python",
-        "Dominant colors",
-        "most prevalent color",
-        "most dominant colors",
+        "Get dominant colours of image",
+        "imagedominantcolour",
+        "Extract dominant colours of an image using Python",
+        "Dominant colours",
+        "most prevalent colour",
+        "most dominant colours",
     ],
     install_requires=["Pillow"],
     python_requires=">=3.6",
@@ -48,7 +48,7 @@ setup(
         "Programming Language :: Python :: Implementation :: CPython",
     ],
     project_urls={
-        "Source": "https://github.com/akamhy/imagedominantcolor",
-        "Tracker": "https://github.com/akamhy/imagedominantcolor/issues",
+        "Source": "https://github.com/demmenie/imagedominantcolour",
+        "Tracker": "https://github.com/demmenie/imagedominantcolour/issues",
     },
 )
