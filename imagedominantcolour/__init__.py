@@ -1,4 +1,4 @@
-from .dominantcolor import DominantColor
+from .dominantcolour import DominantColour
 
 from .__version__ import (
     __title__,
